@@ -6,7 +6,11 @@ function Offer({ offer }) {
         <div className='offer'>
         
           {
-            offer.map((list) => <div> <img src={list.image} alt="Offers" /> </div>)
+            offer.map((list) => <div key={list}> 
+            <picture>
+            <img src={list.image} alt="Offers" /> 
+            </picture>
+            </div>)
           }
         </div>
     )

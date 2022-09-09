@@ -8,7 +8,9 @@ function Navigation() {
     return (
         <div className='navigation'>
             <div className='navigation-first' >
+            <picture>
         <img src={logo} id="logoimage"/>
+        </picture>
             </div>
             <div className='navigation-second'>
                 <p>Xiaomi Phones</p>
@@ -21,8 +23,9 @@ function Navigation() {
             </div>
             <div className='searchbar'>
                 <input type="text" placeholder='search' />
-                <span class="material-icons">
-<img src="/search.svg" />
+                <span className="material-icons">
+                <picture>
+<img src="/search.svg" /></picture>
 </span>
             </div>
         </div>

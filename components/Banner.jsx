@@ -13,14 +13,15 @@ function Banner() {
 
         {MiData.banner.start.map((list) => {
           console.log(list, "pratyuhs")
-          return <Carousel.Item>
+          return <Carousel.Item key={list}>
+          <picture>
             <img
               className="d-block w-100"
               src={list}
               alt="First slide"
 
             />
-
+            </picture>
           </Carousel.Item>
 
 
