@@ -9,7 +9,8 @@ function ProductReviews(productreview) {
             </div>
            <div className='productreview'>
 
-            {productreview.productreview.map((list) => <div className='product-container' key={list}>
+            {productreview.productreview.map((list) => 
+            <div className='product-container' key={list}>
                 <picture>
                     <img src={list.image} />
                 </picture>

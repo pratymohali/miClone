@@ -11,14 +11,14 @@ function Videos(video) {
  </div> 
 <div className='videos'>
     {video.video.map(list =>
-     <div>
-      <ReactPlayer key={list}
+
+      <ReactPlayer
+       key={list}
               url={list.image}
               controls
               light={list.image}
             />
 
-    </div>
     )}
 </div>
 
