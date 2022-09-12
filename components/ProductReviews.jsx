@@ -9,9 +9,9 @@ function ProductReviews(productreview) {
             </div>
            <div className='productreview'>
 
-            {productreview.productreview.map((list) => <div className='product-container'>
+            {productreview.productreview.map((list) => <div className='product-container' key={list}>
                 <picture>
-                    <img src={list.image}/>
+                    <img src={list.image} />
                 </picture>
                 <div className='producthead' style={{padding:"1%"}}>
                     <h1>{list.review}</h1>
