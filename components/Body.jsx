@@ -5,9 +5,14 @@ import Navigation from './Navigation'
 import PreNav from './PreNav'
 import Offer from './Offer'
 import StarProduct from "./StarProduct"
+import HotAccesories from "./HotAccesories"
+import ProductReviews from './ProductReviews'
+import Videos from './Videos'
 
 function WebBody() {
   console.log(MiData, "Mydata")
+
+
   return (
     <>
       <PreNav />
@@ -15,6 +20,9 @@ function WebBody() {
       <Banner />
       <Offer offer={MiData.offer} />
 <StarProduct starProduct={MiData.starProduct} />
+<HotAccesories />
+<ProductReviews productreview={MiData.productReviews}/>
+<Videos video={MiData.videos} />
     </>
   )
 }
